@@ -1,0 +1,71 @@
+@import 'vars';
+
+.mobile-menu {
+    position: fixed;
+    min-width: 40vh;
+    max-height: 100vh;
+    padding: 20px 39px 20px 39px;
+    background-color: var(--white);
+}
+
+.mobile-menu-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+.mobile-menu p {
+    margin: 0;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.mobile-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-menu ul li {
+    margin-top: 37px;
+}
+
+.mobile-menu .categories {
+    padding-bottom: 41px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu .mobile-menu-up img {
+    width: 24px;
+    padding: 24px;
+}
+
+.mobile-menu .my {
+    margin-top: 40px;
+}
+
+.mobile-menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.user .sign-out {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.mobile-menu .user li {
+    margin-top: 6px;
+}
+
+@media (min-width: 640px) {
+    .mobile-menu {
+        display: none;
+    }
+}
