@@ -3,10 +3,10 @@
 .Menu {
 	width: 100px;
 	height: 144px;
-	border: 1px solid var(--very-light-pink);
+	border: 1px solid var($--very-light-pink);
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
-	background-color: var(--white);
+	background-color: var($--white);
 }
 .Menu ul {
 	list-style: none;
@@ -22,14 +22,14 @@
 }
 .Menu ul li:last-child {
 	padding-top: 20px;
-	border-top: 1px solid var(--very-light-pink);
+	border-top: 1px solid var($--very-light-pink);
 }
 .Menu ul li:last-child a {
-	color: var(--hospital-green);
-	font-size: var(--sm);
+	color: var($--hospital-green);
+	font-size: var($--sm);
 }
 .Menu ul li a {
-	color: var(--back);
+	color: var($--black);
 	text-decoration: none;
 	margin-bottom: 20px;
 	display: inline-block;

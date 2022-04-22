@@ -1,10 +1,10 @@
 import React from 'react';
-import 'styles/MenuMobile.scss';
 import iconClose from "@icons/icon_close.png";
+import styles from 'styles/MenuMobile.module.scss';
 
 const MenuMobile = ({ handleToggleMenuMobile }) => {
     return (
-        <div className="mobile-menu">
+        <div className={styles.mobile-menu}>
             <div className="mobile-menu-up">
                 <ul className="categories">
                     <p>CATEGORIES</p>
