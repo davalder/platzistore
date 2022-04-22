@@ -4,7 +4,6 @@ const nextConfig = {
   env: {
     customKey: 'customValue',
   },
-  basePath: '/dist',
   compress: true,
   async redirects() {
     return [
