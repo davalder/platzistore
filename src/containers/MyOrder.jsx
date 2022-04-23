@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import styles from '@styles/MyOrder.module.scss';
@@ -16,29 +17,29 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 
     return (
         <aside className={styles.MyOrder}>
-            <div className="title-container">
+            <div className={styles['title-container']}>
                 <img
                     src={arrow}
                     alt="arrow"
                     onClick={() => setToggleOrders(!toggleOrders)}
 
                 />
-                <p className="title">My order</p>
+                <p className={styles.title}>My order</p>
             </div>
-            <div className="my-order-content">
+            <div className={styles['my-order-content']}>
                 {state.cart.map(product => (
                     <OrderItem product={product} key={`orderItem-${product.id}`} />
                 ))}
             </div>
-            <div className="order">
+            <div className={styles.order}>
                 <p>
                     <span>Total</span>
                 </p>
                 <p>${sumTotal()}</p>
             </div>
-            <button className="primary-button">
+            <Link className={styles['primary-button']} href="/checkout">
                 Checkout
-            </button>
+            </Link>
         </aside>
     );
 }
