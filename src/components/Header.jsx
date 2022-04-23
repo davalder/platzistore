@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
 import MenuMobile from '@components/MenuMobile';
@@ -25,9 +26,9 @@ const Header = () => {
 
   return (
     <nav className={styles.Nav}>
-      <img src={iconMenu} alt="menu" className={styles.menu} onClick={handleToggleMenuMobile} />
+      <Image src={iconMenu} alt="menu" className={styles.menu} onClick={handleToggleMenuMobile} />
       <div className={styles['navbar-left']}>
-        <img src={logo} alt="logo" className={styles['nav-logo']} />
+        <Image src={logo} alt="logo" className={styles['nav-logo']} />
         <ul>
           <li>
             <a href="/">All</a>
@@ -53,10 +54,10 @@ const Header = () => {
         <ul>
           <li className={styles['navbar-email']}>camilayokoo@gmail.com</li>
           <li>
-            <img src={arrowDown} alt="arrow_down" className={styles['arrow-down']} onClick={handleToggle} />
+            <Image src={arrowDown} alt="arrow_down" className={styles['arrow-down']} onClick={handleToggle} />
           </li>
           <li className={styles['navbar-shopping-cart']} onClick={() => setToggleOrders(!toggleOrders)}>
-            <img src={iconShoppingCart} alt="shopping card" />
+            <Image src={iconShoppingCart} alt="shopping card" />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>
