@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import OrderItem from 'components/OrderItem';
-import AppContext from 'context/AppContext';
-import styles from 'styles/MyOrder.module.scss';
+import OrderItem from '@components/OrderItem';
+import AppContext from '@context/AppContext';
+import styles from '@styles/MyOrder.module.scss';
 
 import arrow from "@icons/flechita.svg";
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import ProductInfo from '../components/ProductInfo';
-import '../styles/ProductDetail.scss';
+import ProductInfo from '@components/ProductInfo';
+import '@styles/ProductDetail.scss';
 
 import iconClose from "@icons/icon_close.png";
 

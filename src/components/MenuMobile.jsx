@@ -1,6 +1,6 @@
 import React from 'react';
 import iconClose from "@icons/icon_close.png";
-import styles from 'styles/MenuMobile.module.scss';
+import styles from '@styles/MenuMobile.module.scss';
 
 const MenuMobile = ({ handleToggleMenuMobile }) => {
     return (

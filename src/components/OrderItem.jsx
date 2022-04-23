@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import AppContext from 'context/AppContext';
+import AppContext from '@context/AppContext';
 import iconClose from "@icons/icon_close.png";
-import styles from 'styles/OrderItem.module.scss';
+import styles from '@styles/OrderItem.module.scss';
 
 const OrderItem = ({ product }) => {
     const { removeFromCart, state } = useContext(AppContext);

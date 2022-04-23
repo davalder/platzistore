@@ -5,7 +5,7 @@
     min-width: 40vh;
     max-height: 100vh;
     padding: 20px 39px 20px 39px;
-    background-color: var(--white);
+    background-color: --white;
 }
 
 .mobile-menu-up {
@@ -17,13 +17,13 @@
 
 .mobile-menu p {
     margin: 0;
-    color: var(--black);
+    color: $--black;
     font-weight: bold;
 }
 
 .mobile-menu a {
     text-decoration: none;
-    color: var(--black);
+    color: $--black;
     font-weight: bold;
 }
 
@@ -38,7 +38,7 @@
 
 .mobile-menu .categories {
     padding-bottom: 41px;
-    border-bottom: 1px solid var(--very-light-pink);
+    border-bottom: 1px solid $--very-light-pink;
 }
 
 .mobile-menu .mobile-menu-up img {
@@ -51,13 +51,13 @@
 }
 
 .mobile-menu .email {
-    font-size: var(--sm);
+    font-size: $--sm;
     font-weight: 300;
 }
 
 .user .sign-out {
-    color: var(--hospital-green);
-    font-size: var(--sm);
+    color: $--hospital-green;
+    font-size: $--sm;
 }
 
 .mobile-menu .user li {
