@@ -12,7 +12,7 @@ const ProductList = () => {
         <section className={styles['main-container']}>
             <div className={styles.ProductList}>
                 {products.map(product => {
-                        if (product.images.length > 0 && product.images[0] !== '') {
+                        if (product.images.length > 1 && product.images[0] !== '') {
                             return <ProductItem product={product} key={product.id} />
                         }
                     }
