@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-import '../styles/Login.scss';
-
+import Image from 'next/image';
 import logo from "@logos/logo_yard_sale.svg";
+import styles from '@styles/Login.module.scss';
+
 
 const Login = () => {
     const form = useRef(null);
@@ -17,39 +18,39 @@ const Login = () => {
     }
 
     return (
-        <div className="Login">
-            <div className="Login-container">
-                <img src={logo} alt="logo" className="login-logo" />
-                <form action="/" className="form" ref={form}>
-                    <label htmlFor="email" className="label">
+        <div className={styles.Login}>
+            <div className={styles['Login-container']}>
+                <Image src={logo} alt="logo" className={styles['login-logo']} />
+                <form action="/" className={styles.form} ref={form}>
+                    <label htmlFor="email" className={styles.label}>
                         Email address
                     </label>
                     <input
                         type="text"
                         name="email"
                         placeholder="platzi@example.com"
-                        className="input input-email"
+                        className={styles['input', 'input-email']}
                     />
-                    <label htmlFor="password" className="label">
+                    <label htmlFor="password" className={styles.label}>
                         Password
                     </label>
                     <input
                         type="password"
                         name="password"
                         placeholder="*********"
-                        className="input input-password"
+                        className={styles['input', 'input-password']}
                     />
                     <button
                         type="submit"
                         onClick={handleSubmit}
-                        className="primary-button login-button"
+                        className={styles['primary-button', 'login-button']}
                     >
                         Log in
                     </button>
                     <a href="/">Forgot my password</a>
                 </form>
                 <button
-                    className="secondary-button signup-button"
+                    className={styles['secondary-button', 'signup-button']}
                 >
                     Sign up
                 </button>

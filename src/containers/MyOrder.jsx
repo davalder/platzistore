@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
-import styles from '@styles/MyOrder.module.scss';
-
 import arrow from "@icons/flechita.svg";
+import styles from '@styles/MyOrder.module.scss';
 
 const MyOrder = ({ toggleOrders, setToggleOrders }) => {
     const { state } = useContext(AppContext);
@@ -18,12 +18,14 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
     return (
         <aside className={styles.MyOrder}>
             <div className={styles['title-container']}>
-                <img
-                    src={arrow}
-                    alt="arrow"
-                    onClick={() => setToggleOrders(!toggleOrders)}
+                <figure>
+                    <Image
+                        src={arrow}
+                        alt="arrow"
+                        onClick={() => setToggleOrders(!toggleOrders)}
 
-                />
+                    />
+                </figure>
                 <p className={styles.title}>My order</p>
             </div>
             <div className={styles['my-order-content']}>
@@ -37,8 +39,10 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
                 </p>
                 <p>${sumTotal()}</p>
             </div>
-            <Link className={styles['primary-button']} href="/checkout">
-                Checkout
+            <Link  href="/checkout">
+                <div className={styles['primary-button']}>
+                    <p>Checkout</p>
+                </div>
             </Link>
         </aside>
     );

@@ -1,6 +1,8 @@
 @import 'vars';
 
 .MyOrder {
+	display: flex;
+	flex-direction: column;
 	width: 360px;
 	max-height: 100vh;
 	padding: 24px;
@@ -12,10 +14,12 @@
 }
 .title-container {
 	display: flex;
+	align-items: center;
 }
-.title-container img {
+.title-container figure {
 	transform: rotate(180deg);
-	margin-right: 14px;
+	padding: 0 0px 0px 14px;
+	margin: 0;
 }
 .title {
 	font-size: $--lg;
@@ -72,6 +76,7 @@
 	font-size: $--md;
 	font-weight: bold;
 	height: 50px;
+	text-align: center;
 }
 @media (max-width: 640px) {
 	.MyOrder {

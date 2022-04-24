@@ -1,12 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
 import iconClose from "@icons/icon_close.png";
 import styles from '@styles/MenuMobile.module.scss';
 
 const MenuMobile = ({ handleToggleMenuMobile }) => {
     return (
         <div className={styles.mobile-menu}>
-            <div className="mobile-menu-up">
-                <ul className="categories">
+            <div className={styles['mobile-menu-up']}>
+                <ul className={styles.categories}>
                     <p>CATEGORIES</p>
                     <li>
                         <a href="/">All</a>
@@ -27,10 +28,10 @@ const MenuMobile = ({ handleToggleMenuMobile }) => {
                         <a href="/">Others</a>
                     </li>
                 </ul>
-                <img src={iconClose} alt="close" onClick={handleToggleMenuMobile} />
+                <Image src={iconClose} alt="close" onClick={handleToggleMenuMobile} />
             </div>
-            <div className="mobile-menu-down">
-                <ul className="my">
+            <div className={styles['mobile-menu-down']}>
+                <ul className={styles.my}>
                     <li>
                         <a href="/">My orders</a>
                     </li>
@@ -39,12 +40,12 @@ const MenuMobile = ({ handleToggleMenuMobile }) => {
                     </li>
                 </ul>
 
-                <ul className="user">
+                <ul className={styles.user}>
                     <li>
-                        <a href="/" className="email">camilayokoo@gmail.com</a>
+                        <a href="/" className={styles.email}>camilayokoo@gmail.com</a>
                     </li>
                     <li>
-                        <a href="/" className="sign-out">Sign out</a>
+                        <a href="/" className={styles['sign-out']}>Sign out</a>
                     </li>
                 </ul>
             </div>
