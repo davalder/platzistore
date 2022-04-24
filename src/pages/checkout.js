@@ -7,7 +7,7 @@ const Checkout = () => {
   return (
     <>
       <Head>
-          <title>Checkout</title>
+        <title>Checkout</title>
       </Head>
       <div className={styles.Checkout}>
         <div className={styles['Checkout-container']}>
@@ -21,7 +21,7 @@ const Checkout = () => {
               <p>$560.00</p>
             </div>
           </div>
-          {/* <OrderItem /> */}
+          <OrderItem />
         </div>
       </div>
     </>
