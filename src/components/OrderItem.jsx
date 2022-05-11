@@ -23,6 +23,6 @@ const OrderItem = ({ product }) => {
             <Image src={iconClose} alt="close" onClick={() => handleRemove(product)} />
         </div>
     );
-}
+};
 
 export default OrderItem;

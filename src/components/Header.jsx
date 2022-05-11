@@ -29,27 +29,39 @@ const Header = () => {
     <nav className={styles.Nav}>
       <Image src={iconMenu} alt="menu" className={styles.menu} onClick={handleToggleMenuMobile} />
       <div className={styles['navbar-left']}>
-        <Link href="/">
+        <Link href="/" passHref>
           <Image src={logo} alt="logo" className={styles['nav-logo']} />
         </Link>
         <ul>
           <li>
-            <a href="/">All</a>
+            <Link href="/" passHref>
+              <a href='replace'>All</a>
+            </Link>
           </li>
           <li>
-            <a href="/">Clothes</a>
+            <Link href="/" passHref>
+              <a href='replace'>Clothes</a>
+            </Link>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <Link href="/" passHref>
+              <a href='replace'>Electronics</a>
+            </Link>
           </li>
           <li>
-            <a href="/">Furniture</a>
+            <Link href="/" passHref>
+              <a href='replace'>Furniture</a>
+            </Link>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <Link href="/" passHref>
+              <a href='replace'>Toys</a>
+            </Link>
           </li>
           <li>
-            <a href="/">Others</a>
+            <Link href="/" passHref>
+              <a href='replace'>Others</a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -59,8 +71,8 @@ const Header = () => {
           <li>
             <Image src={arrowDown} alt="arrow_down" className={styles['arrow-down']} onClick={handleToggle} />
           </li>
-          <li className={styles['navbar-shopping-cart']} onClick={() => setToggleOrders(!toggleOrders)}>
-            <Image src={iconShoppingCart} alt="shopping card" />
+          <li className={styles['navbar-shopping-cart']} >
+            <Image src={iconShoppingCart} alt="shopping card" onClick={() => setToggleOrders(!toggleOrders)} />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>

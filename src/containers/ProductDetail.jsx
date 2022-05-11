@@ -14,6 +14,6 @@ const ProductDetail = () => {
             <ProductInfo />
         </aside>
     );
-}
+};
 
 export default ProductDetail;

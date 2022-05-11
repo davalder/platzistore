@@ -39,13 +39,13 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
                 </p>
                 <p>${sumTotal()}</p>
             </div>
-            <Link  href="/checkout">
+            <Link  href="/checkout" passHref>
                 <div className={styles['primary-button']}>
                     <p>Checkout</p>
                 </div>
             </Link>
         </aside>
     );
-}
+};
 
 export default MyOrder;
